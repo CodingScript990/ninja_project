@@ -8,3 +8,44 @@ body {
     padding: 0;
 }
 
+/* Header */
+.header {
+    width: 100vw;
+    background-color: antiquewhite;
+}
+
+.header-title h1{
+    font-size: 1.3rem;
+    font-weight: bolder;
+    margin-top: 1rem;
+    margin-left: 2rem;
+    float: left;
+}
+
+.header-menus {
+    background-color: aliceblue;
+}
+
+ul {
+    float: right;
+    margin-top: 1rem;
+    margin-left: 3rem;
+    margin-right: 5rem;
+}
+
+li {
+    list-style: none;
+    float: left;
+    margin-left: 2rem;
+}
+
+li a {
+    text-decoration: none;
+    color: #ED87BA;
+    font-weight: bolder;
+}
+
+li a:hover {
+    color: #BA0660;
+}
+
