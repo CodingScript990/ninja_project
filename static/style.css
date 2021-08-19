@@ -17,8 +17,10 @@ body {
 .header-title h1{
     font-size: 1.3rem;
     font-weight: bolder;
+    color: #FDA4D0;
     margin-top: 1rem;
     margin-left: 2rem;
+    cursor: default;
     float: left;
 }
 
@@ -49,3 +51,78 @@ li a:hover {
     color: #BA0660;
 }
 
+/* Banner */
+.banner {
+    position: relative;
+}
+
+/* Banner Img */
+.image-slide {
+    width: 100%;
+}
+
+.carousel-item {
+    width: 100vw;
+    opacity: 0.82;
+}
+
+.carousel-item img {
+    height: 50vh;
+    object-fit: cover;
+}
+
+/* Banner Title */
+.banner-title {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -100%);
+}
+
+.banner-title h1 {
+    color: #ED87BA;
+    font-weight: bolder;
+}
+
+.banner-title span {
+    font-weight: bolder;
+    font-size: 1.2rem;
+    color: #E097DC;
+}
+
+/* Banner Select-Forms */
+.select-forms {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, 0%);
+}
+
+.select {
+    width: 15rem;
+    color: #E097DC;
+    height: 2.75rem;
+    margin-right: 1rem;
+    border: 0.125rem solid #ED87BA;
+    border-radius: 0.5rem;
+    outline: none;
+}
+
+/* Banner Btn */
+.banner-btn {
+    position: absolute;
+    top: 68%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.btn {
+    background-color: #FDA4D0;
+    outline: none;
+    color: #ffffff;
+}
+
+.btn:hover {
+    color: #ffffff;
+    background-color: #E66BB6;
+}
