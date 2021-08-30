@@ -56,8 +56,11 @@ a:hover {
 /*Comment Area*/
 
 .post-area {
-    width: 100%;
-    margin: auto;
+    max-width: 100%;
+    margin: 2.5rem auto;
+    user_scalable: yes;
+    display: grid;
+    place-content: center;
 }
 
 .user {
@@ -74,7 +77,7 @@ input:nth-child(1) {
 
 .user-comment {
     width: 40vw;
-    height: 10vh;
+    height: 12vh;
     border: 1px solid #FBBCC3;
     outline-color: #FC8A97;
     border-radius: 0.6rem;
@@ -97,25 +100,26 @@ input:nth-child(1) {
 }
 
 .comment-section {
-    width: 1200px;
+    width: 100%;
     margin: auto;
     display: block;
 }
 
 .comment-box {
-    width: 1000px;
+    width: 100%;
     margin: auto;
     display: flex;
     justify-content: space-between;
 }
 
 .comment {
-    display: block;
     background-color: white;
     border-radius: 0.5rem;
-    width: 39vw;
+    max-width: 40vw;
+    height: 13vh;
     margin: 25px auto;
     padding: 10px;
+    list-style: none;
 }
 
 .date {

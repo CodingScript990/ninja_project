@@ -57,14 +57,12 @@ a:hover {
 
 /* Create Post Area */
 .container {
-    width: 800px;
-    height: 600px;
-    margin: auto;
+    max-width: 50%;
+    height: 70vh;
+    margin: 1.25rem auto;
     background-color: #FED5DA;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    display: grid;
+    place-content: center;
     border-radius: 1rem;
     border: 1px solid #FBBCC3;
     box-shadow: 1px 1px 10px  #F9808F;
@@ -128,15 +126,17 @@ a:hover {
 }
 
 .review {
-    width: 37vw;
-    height: 25vh;
+    width: 42vw;
+    height: 27vh;
     resize: none;
     border: 1px solid #F9808F;
 }
 
 .btn-danger {
+    width: 6vw;
     display: flex;
-    margin: auto;
+    place-content: center;
+    margin: 0 auto 20px auto;
 }
 
 .item:nth-child(1) {

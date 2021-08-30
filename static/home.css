@@ -223,3 +223,374 @@ ul.hash > li {
 /*    font-weight: bolder;*/
 /*    text-shadow: 1px 1px 2px #F45B6D;*/
 /*}*/
+
+/* media query */
+@media screen and (max-width: 1080px) {
+    body {
+        background-color: red;
+    }
+
+    /* Header */
+
+    .header {
+        width: 100%;
+        height: 80px;
+        display: flex;
+        justify-content: center;
+        position: fixed;
+        margin: auto;
+        z-index: 9999;
+    }
+
+    .site_name {
+        margin: auto;
+        float: left;
+        font-size: 1rem;
+        color: #eee;
+        text-shadow: 3px 2px 3px #B00415;
+    }
+
+    .nav {
+        display: flex;
+        justify-content: flex-end;
+        margin: auto;
+        width: calc(1080px - 500px);
+        float: right;
+        text-shadow: 2px 1px 3px #B00415;
+    }
+
+    .nav > li {
+        margin-left: 30px;
+        list-style: none;
+    }
+
+    .nav > li > a:hover {
+        color: #FEE2E5;
+        font-weight: bold;
+    }
+
+    /* Banner Text */
+    .banner-text-box {
+        width: 100%;
+        top: 37%;
+        text-align: center;
+        float: contour;
+        position: absolute;
+    }
+
+    .intro-title {
+        font-size: 3rem;
+        color: #eeeeee;
+        text-shadow: 2px 2px 5px #201C23;
+    }
+
+    .contents1 {
+        font-size: 1.35rem;
+        color: #eeeeee;
+        text-shadow: 2px 2px 5px #201C23;
+        line-height: 5.2rem;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    body {
+        background-color: #2f3640;
+    }
+
+    /* Header */
+    .header {
+        width: 100%;
+        height: 80px;
+        display: flex;
+        justify-content: center;
+        position: fixed;
+        margin: auto;
+        z-index: 9999;
+    }
+
+    .site_name {
+        margin: auto;
+        float: left;
+        font-size: 1rem;
+        color: #eee;
+        text-shadow: 3px 2px 3px #B00415;
+    }
+
+    .nav {
+        display: flex;
+        justify-content: flex-end;
+        margin: auto;
+        width: calc(768px - 500px);
+        float: right;
+        text-shadow: 2px 1px 3px #B00415;
+    }
+
+    .nav > li {
+        margin-left: 30px;
+        list-style: none;
+    }
+
+    .nav > li > a:hover {
+        color: #FEE2E5;
+        font-weight: bold;
+    }
+
+    /* Banner Text */
+    .banner-text-box {
+        width: 100%;
+        top: 37%;
+        text-align: center;
+        float: contour;
+        position: absolute;
+    }
+
+    .intro-title {
+        font-size: 2.5rem;
+        color: #eeeeee;
+        text-shadow: 2px 2px 5px #201C23;
+    }
+
+    .contents1 {
+        font-size: 1.25rem;
+        color: #eeeeee;
+        text-shadow: 2px 2px 5px #201C23;
+        line-height: 5.2rem;
+    }
+
+    /* 등록된 리뷰들 */
+    .main-text-area {
+        width: 100%;
+        height: 600px;
+        margin-top: 205px;
+        margin-bottom: 25px;
+        position: absolute;
+    }
+
+    .block {
+        margin: auto;
+        display: flex;
+        justify-content: center;
+    }
+
+    .grid {
+        display: grid;
+        grid-template-columns: 250px 1fr 1fr;
+        grid-template-rows: 50px 1fr 1fr 1fr 1fr;
+        grid-template-areas:
+            "image title title"
+            "image content content"
+            "image content content"
+            "image hash hash";
+        margin: 10px 10px;
+        width: 600px;
+        height: 250px;
+        background-color: #ECEBEB;
+        border: 2px solid #FBBCC3;
+        box-shadow: 1px 1px 2px #F9808F;
+    }
+
+    .season {
+        overflow: fragments;
+    }
+
+    img {
+        width: 300px;
+        height: 247px;
+        object-fit: cover;
+    }
+
+    .image {
+        grid-area: image;
+        height: 250px;
+    }
+
+    .title {
+        font-size: 24px;
+        font-weight: bold;
+        grid-area: title;
+        text-align: center;
+        border-bottom: 1px solid #FC8A97;
+    }
+
+    .title-left {
+        font-size: 1.18rem;
+        margin-top: 5px;
+        margin-left: 0.5rem;
+        color: #FBBCC3;
+        text-shadow: 2px 2px 2px #E35151;
+    }
+
+    .title-right {
+        font-size: 0.8rem;
+        margin-top: 25px;
+        margin-right: 0.5rem;
+        color: #FC8A97;
+    }
+
+    .content {
+        grid-area: content;
+        padding: 4px;
+        height: 17vh;
+    }
+
+    .content > p {
+        display: block;
+        color: #F45B6D;
+        font-size: 15px;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: normal;
+        line-height: 23px;
+        text-align: left;
+        word-wrap: break-word;
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+        -webkit-line-clamp: 8;
+        word-wrap: break-word;
+    }
+
+    .hash {
+        margin-top: 10rem;
+        grid-area: hash;
+        list-style: none;
+    }
+
+    ul.hash > li {
+        float: left;
+        margin-right: 1rem;
+        color: #FC8A97;
+        text-shadow: 2px 2px 13px #858282;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    body {
+        background-color: #FED5DA;
+    }
+    /* Header */
+    .header {
+        width: 100%;
+        height: 80px;
+        display: flex;
+        justify-content: center;
+        position: fixed;
+        margin: auto;
+        z-index: 9999;
+    }
+
+    .site_name {
+        margin: auto;
+        float: left;
+        font-size: 0.9rem;
+        color: #eee;
+        text-shadow: 3px 2px 3px #B00415;
+    }
+
+    .nav {
+        display: flex;
+        justify-content: flex-end;
+        margin: auto;
+        width: calc(480px - 280px);
+        float: right;
+        text-shadow: 2px 1px 3px #B00415;
+    }
+
+    .nav > li {
+        font-size: 0.8rem;
+        margin-left: 20px;
+        list-style: none;
+    }
+
+    .nav > li > a:hover {
+        color: #FEE2E5;
+        font-weight: bold;
+    }
+
+    /* Banner Text */
+    .banner-text-box {
+        width: 100%;
+        top: 37%;
+        text-align: center;
+        float: contour;
+        position: absolute;
+    }
+
+    .intro-title {
+        font-size: 2rem;
+        color: #eeeeee;
+        text-shadow: 2px 2px 5px #201C23;
+    }
+
+    .contents1 {
+        font-size: 1.15rem;
+        color: #eeeeee;
+        text-shadow: 2px 2px 5px #201C23;
+        line-height: 5.2rem;
+    }
+}
+
+@media screen and (max-width: 360px) {
+    body {
+        background-color: #FED5DA;
+    }
+    /* Header */
+    .header {
+        width: 100%;
+        height: 80px;
+        display: flex;
+        justify-content: center;
+        position: fixed;
+        margin: auto;
+        z-index: 9999;
+    }
+
+    .site_name {
+        margin: auto;
+        float: left;
+        font-size: 0.75rem;
+        color: #eee;
+        text-shadow: 3px 2px 3px #B00415;
+    }
+
+    .nav {
+        display: flex;
+        justify-content: flex-end;
+        margin: auto;
+        width: calc(360px - 150px);
+        float: right;
+        text-shadow: 2px 1px 3px #B00415;
+    }
+
+    .nav > li {
+        font-size: 0.8rem;
+        margin-left: 15px;
+        list-style: none;
+    }
+
+    .nav > li > a:hover {
+        color: #FEE2E5;
+        font-weight: bold;
+    }
+
+    /* Banner Text */
+    .banner-text-box {
+        width: 100%;
+        top: 37%;
+        text-align: center;
+        float: contour;
+        position: absolute;
+    }
+
+    .intro-title {
+        font-size: 1.75rem;
+        color: #eeeeee;
+        text-shadow: 2px 2px 5px #201C23;
+    }
+
+    .contents1 {
+        font-size: 1.05rem;
+        color: #eeeeee;
+        text-shadow: 2px 2px 5px #201C23;
+        line-height: 5.2rem;
+    }
+}
