@@ -194,13 +194,19 @@ img {
     word-wrap: break-word;
 }
 
+.details {
+    width: calc(500px - 10px);
+}
+
 .hash {
     margin-top: 10rem;
     grid-area: hash;
     list-style: none;
+    float: left;
 }
 
 ul.hash > li {
+    font-size: 0.9rem;
     float: left;
     margin-right: 1rem;
     color: #FC8A97;

@@ -9,6 +9,7 @@ function showReview() {
         data: {},
         success: function (response) {
             let reviews = response['all_reviews'];
+
             for (let i = 0; i < reviews.length; i++) {
                 let title = reviews[i]['title'];
                 let season = reviews[i]['season'];
@@ -17,7 +18,7 @@ function showReview() {
                 let review = reviews[i]['review'];
                 let file = reviews[i]['file'];
                 let data = reviews[i]['data'];
-
+                let like = reviews[i]['like'];
 
                 let temp_html = `<div class="block" >
                                     <div class="grid">  
@@ -26,7 +27,7 @@ function showReview() {
                                         </div>
                                         <div class="title">
                                             <div class="title-left" style="float: left;">
-                                                <p>${title}</p>
+                                                <p>${title}</p>                           
                                             </div>
                                             <div class="title-right" style="float: right;">
                                                 <span>${data}</span>
@@ -35,11 +36,13 @@ function showReview() {
                                         <div class="content">
                                             <p>${review}</p>
                                         </div>
-                                        <ul class="hash">
-                                            <li><strong style="color: #E35151;">계절</strong> : ${season}</li>
-                                            <li><strong style="color: #E35151;">지역</strong> : ${area}</li>
-                                            <li><strong style="color: #E35151;">해시</strong> : ${keywords}</li>
-                                        </ul>
+                                        <div class="details">
+                                            <ul class="hash">
+                                                <li><strong style="color: #E35151;">계절</strong> : ${season}</li>
+                                                <li><strong style="color: #E35151;">지역</strong> : ${area}</li>
+                                                <li><strong style="color: #E35151;">해시</strong> : ${keywords}</li>
+                                            </ul>
+                                        </div>
                                     </div>
                                  </div>`;
                 $('#reviews-box').append(temp_html);

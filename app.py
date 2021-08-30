@@ -93,9 +93,20 @@ def test_create():
 
 @app.route('/home', methods=['GET'])
 def show_reviews():
-    reviews = list(db.travelreview.find({}, {'_id': False}))
+    reviews = list(db.travelreview.find({}, {'_id': False}).sort('data', -1))
     return jsonify({'all_reviews': reviews})
 
+@app.route('/like', methods=['POST'])
+def like_star():
+    title_receive = request.form['title_give']
+
+    target_like = db.travelreview.find_one({'title': title_receive})
+    current_like = target_like['like']
+
+    new_like = current_like + 1
+
+    db.travelreview.update_one({'title': title_receive}, {'$set': {'like': new_like}})
+    return jsonify({'msg': '좋아요 완료!'})
 
 if __name__ == '__main__':
     app.run('0.0.0.0', port=5000, debug=True)
