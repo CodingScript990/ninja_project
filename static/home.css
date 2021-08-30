@@ -226,10 +226,6 @@ ul.hash > li {
 
 /* media query */
 @media screen and (max-width: 1080px) {
-    body {
-        background-color: red;
-    }
-
     /* Header */
 
     .header {
@@ -293,10 +289,6 @@ ul.hash > li {
 }
 
 @media screen and (max-width: 768px) {
-    body {
-        background-color: #2f3640;
-    }
-
     /* Header */
     .header {
         width: 100%;
@@ -464,9 +456,6 @@ ul.hash > li {
 }
 
 @media screen and (max-width: 480px) {
-    body {
-        background-color: #FED5DA;
-    }
     /* Header */
     .header {
         width: 100%;
@@ -530,9 +519,6 @@ ul.hash > li {
 }
 
 @media screen and (max-width: 360px) {
-    body {
-        background-color: #FED5DA;
-    }
     /* Header */
     .header {
         width: 100%;
