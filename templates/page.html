@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <title>여행지 소개</title>
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <!-- Css -->
+    <link href='{{ url_for("static", filename="page.css") }}' rel="stylesheet">
+
+     <!-- Script -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bs-custom-file-input/dist/bs-custom-file-input.js"></script>
+
+    <script src="../static/page.js"></script>
+
+</head>
+<body>
+    <div class="wrap">
+        <!--Header-->
+        <div class="header">
+            <!--Site name-->
+            <div class="site_name">김르탄의 여행 일지</div>
+            <!--Menu-->
+            <ul class="nav">
+                <li><a href="/">Home</a></li>
+                <li><a href="/page">방명록</a></li>
+                <li><a href="/create">리뷰 작성</a></li>
+            </ul>
+        </div>
+
+        <!--Post-->
+        <div class="post-area" id="review-area">
+            <!--Comments-->
+            <div class="comment-box">
+                <!--작성자&댓글&버튼-->
+                <input class="user" type="text" placeholder="닉네임" id="user_name" maxlength="10">
+                <textarea id="comment_box" class="user-comment" placeholder="댓글을 입력해주세요" maxlength="300"></textarea>
+                <button onclick="makeComment()" type="button" class="btn btn-danger">댓글</button>
+            </div>
+
+            <ul class="comment-section" id="comment-area">
+            </ul>
+        </div>
+    </div>
+</body>
+</html>
