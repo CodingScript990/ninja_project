@@ -11,6 +11,8 @@ a {
 
 a:hover {
     text-decoration: none;
+    color: #FEE2E5;
+    font-weight: bold;
 }
 
 .wrap {

@@ -12,7 +12,12 @@
     <!-- Css -->
     <link href='{{ url_for("static", filename="home.css") }}' rel="stylesheet">
 
-    <title>여행지 소개</title>
+    <title>꼬행 - 꼬마 여행일지</title>
+
+    <!-- og:tage -->
+    <meta property="og:title" content="꼬행 - 꼬마 여행일지"/>
+    <meta property="og:description" content="여행지를 소개해주세요~!"/>
+    <meta property="og:image" content="{{ url_for('static', filename='ogimage.jpg') }}"/>
 
     <!-- Script -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
@@ -24,13 +29,14 @@
         crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bs-custom-file-input/dist/bs-custom-file-input.js"></script>
 
-    <script src='../static/index.js'></script>
+    <script src='{{ url_for("static", filename="index.js") }}'></script>
+
 </head>
 <body>
     <div class="wrap">
         <!--Header-->
         <div class="header">
-            <div class="site_name">김르탄의 여행 일지</div>
+            <div class="site_name"><a href="/">김르탄의 여행 일지</a></div>
             <ul class="nav">
                 <li><a href="/">Home</a></li>
                 <li><a href="/page">방명록</a></li>

@@ -11,6 +11,8 @@ a {
 
 a:hover {
     text-decoration: none;
+    color: #FEE2E5;
+    font-weight: bold;
 }
 
 
@@ -109,27 +111,52 @@ input:nth-child(1) {
 
 .comment {
     display: block;
-    background-color: aliceblue;
-    border-radius: 4px;
-    width: 1000px;
-    margin: 20px auto;
-    padding: 20px;
+    background-color: white;
+    border-radius: 0.5rem;
+    width: 39vw;
+    margin: 25px auto;
+    padding: 10px;
 }
 
 .date {
-    font-size: 10px;
-    color: darkgrey;
+    font-size: 11px;
+    color: #858282;
     float: right;
 }
 
+
 .comment-text-user {
     font-weight: bold;
+    color: #F45B6D;
 }
 
 .comment-text {
     margin: 0;
+    color: #F9808F;
+    float: left;
+}
+
+.comments {
+    display: block;
 }
 
 ul {
     padding: 0;
+}
+
+.delete {
+    width: 2vw;
+    height: 4vh;
+    border: none;
+    background-color: transparent !important;
+    color: #E35151;
+    font-weight: bolder;
+    float: right;
+    margin: 0 1.35rem auto auto;
+
+    padding: 0 0 0 0;
+}
+
+.delete:hover {
+    color: #B00415;
 }

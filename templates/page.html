@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
 
-    <title>여행지 소개</title>
+    <title>꼬행 - 꼬마 여행일지</title>
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
@@ -22,7 +22,7 @@
         crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bs-custom-file-input/dist/bs-custom-file-input.js"></script>
 
-    <script src="../static/page.js"></script>
+    <script src='{{ url_for("static", filename="page.js") }}'></script>
 
 </head>
 <body>
@@ -30,7 +30,7 @@
         <!--Header-->
         <div class="header">
             <!--Site name-->
-            <div class="site_name">김르탄의 여행 일지</div>
+            <div class="site_name"><a href="/">김르탄의 여행 일지</a></div>
             <!--Menu-->
             <ul class="nav">
                 <li><a href="/">Home</a></li>
