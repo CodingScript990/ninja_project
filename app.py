@@ -28,15 +28,6 @@ def read_reviews():
     comments = list(db.travel.find({}, {'_id': False}).sort('data', -1))
     return jsonify({'all_comments': comments})
 
-@app.route('/delete', methods=['POST'])
-def delete_comment():
-    user_name_receive = request.form['user_name_give']
-
-    db.travel.delete_one({'user_name' : user_name_receive})
-
-    return jsonify({'msg': '삭제 완료!'})
-
-
 @app.route('/page', methods=['POST'])
 def test_post():
     user_name_receive = request.form['user_name_give']

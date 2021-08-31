@@ -18,7 +18,6 @@ function showReview() {
                 let review = reviews[i]['review'];
                 let file = reviews[i]['file'];
                 let data = reviews[i]['data'];
-                let like = reviews[i]['like'];
 
                 let temp_html = `<div class="block" >
                                     <div class="grid">  
@@ -50,3 +49,14 @@ function showReview() {
         }
     });
 }
+
+let count = (function () {
+    let counter = 0;
+    return function () {
+        return counter += 1;
+    }
+})();
+
+function countNumber() {
+    document.getElementById("counting").innerHTML = count();
+};

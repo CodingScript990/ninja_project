@@ -19,7 +19,6 @@ a:hover {
     position: relative;
 }
 
-
 /* Header */
 
 .header {
@@ -82,7 +81,7 @@ a:hover {
 /* Banner Text */
 .banner-text-box {
     width: 100%;
-    top: 37%;
+    top: 31%;
     text-align: center;
     float: contour;
     position: absolute;
@@ -99,6 +98,26 @@ a:hover {
     color: #eeeeee;
     text-shadow: 2px 2px 5px #201C23;
     line-height: 5.2rem;
+}
+
+.home-content {
+    font-size: 1.45rem;
+    color: #eeeeee;
+    text-shadow: 2px 2px 5px #201C23;
+}
+
+.user-like {
+    font-size: 1.45rem;
+    background-color: transparent !important;
+    width: 4rem;
+    border: 0;
+    cursor: auto;
+    color: #eeeeee;
+    text-shadow: 2px 2px 5px #201C23;
+}
+
+.user-like:focus {
+    outline: none;
 }
 
 /* 등록된 리뷰들 */
@@ -274,24 +293,45 @@ ul.hash > li {
     /* Banner Text */
     .banner-text-box {
         width: 100%;
-        top: 37%;
+        top: 31%;
         text-align: center;
         float: contour;
         position: absolute;
     }
 
     .intro-title {
-        font-size: 3rem;
+        font-size: 3.5rem;
         color: #eeeeee;
         text-shadow: 2px 2px 5px #201C23;
     }
 
     .contents1 {
-        font-size: 1.35rem;
+        font-size: 1.5rem;
         color: #eeeeee;
         text-shadow: 2px 2px 5px #201C23;
         line-height: 5.2rem;
     }
+
+    .home-content {
+        font-size: 1.45rem;
+        color: #eeeeee;
+        text-shadow: 2px 2px 5px #201C23;
+    }
+
+    .user-like {
+        font-size: 1.45rem;
+        background-color: transparent !important;
+        width: 4rem;
+        border: 0;
+        cursor: auto;
+        color: #eeeeee;
+        text-shadow: 2px 2px 5px #201C23;
+    }
+
+    .user-like:focus {
+        outline: none;
+    }
+
 }
 
 @media screen and (max-width: 768px) {
@@ -336,7 +376,7 @@ ul.hash > li {
     /* Banner Text */
     .banner-text-box {
         width: 100%;
-        top: 37%;
+        top: 31%;
         text-align: center;
         float: contour;
         position: absolute;
@@ -349,11 +389,32 @@ ul.hash > li {
     }
 
     .contents1 {
-        font-size: 1.25rem;
+        font-size: 1.35rem;
         color: #eeeeee;
         text-shadow: 2px 2px 5px #201C23;
         line-height: 5.2rem;
     }
+
+    .home-content {
+        font-size: 1.25rem;
+        color: #eeeeee;
+        text-shadow: 2px 2px 5px #201C23;
+    }
+
+    .user-like {
+        font-size: 1.25rem;
+        background-color: transparent !important;
+        width: 4rem;
+        border: 0;
+        cursor: auto;
+        color: #eeeeee;
+        text-shadow: 2px 2px 5px #201C23;
+    }
+
+    .user-like:focus {
+        outline: none;
+    }
+
 
     /* 등록된 리뷰들 */
     .main-text-area {
@@ -504,24 +565,45 @@ ul.hash > li {
     /* Banner Text */
     .banner-text-box {
         width: 100%;
-        top: 37%;
+        top: 31%;
         text-align: center;
         float: contour;
         position: absolute;
     }
 
     .intro-title {
-        font-size: 2rem;
+        font-size: 1.5rem;
         color: #eeeeee;
         text-shadow: 2px 2px 5px #201C23;
     }
 
     .contents1 {
-        font-size: 1.15rem;
+        font-size: 1.05rem;
         color: #eeeeee;
         text-shadow: 2px 2px 5px #201C23;
         line-height: 5.2rem;
     }
+
+    .home-content {
+        font-size: 1.05rem;
+        color: #eeeeee;
+        text-shadow: 2px 2px 5px #201C23;
+    }
+
+    .user-like {
+        font-size: 1.05rem;
+        background-color: transparent !important;
+        width: 4rem;
+        border: 0;
+        cursor: auto;
+        color: #eeeeee;
+        text-shadow: 2px 2px 5px #201C23;
+    }
+
+    .user-like:focus {
+        outline: none;
+    }
+
 }
 
 @media screen and (max-width: 360px) {
@@ -567,14 +649,14 @@ ul.hash > li {
     /* Banner Text */
     .banner-text-box {
         width: 100%;
-        top: 37%;
+        top: 31%;
         text-align: center;
         float: contour;
         position: absolute;
     }
 
     .intro-title {
-        font-size: 1.75rem;
+        font-size: 1.25rem;
         color: #eeeeee;
         text-shadow: 2px 2px 5px #201C23;
     }
@@ -585,4 +667,25 @@ ul.hash > li {
         text-shadow: 2px 2px 5px #201C23;
         line-height: 5.2rem;
     }
+
+    .home-content {
+        font-size: 1rem;
+        color: #eeeeee;
+        text-shadow: 2px 2px 5px #201C23;
+    }
+
+    .user-like {
+        font-size: 1rem;
+        background-color: transparent !important;
+        width: 4rem;
+        border: 0;
+        cursor: auto;
+        color: #eeeeee;
+        text-shadow: 2px 2px 5px #201C23;
+    }
+
+    .user-like:focus {
+        outline: none;
+    }
+
 }
