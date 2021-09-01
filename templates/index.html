@@ -27,7 +27,6 @@
         integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
         crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bs-custom-file-input/dist/bs-custom-file-input.js"></script>
-    <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
 
     <script src='{{ url_for("static", filename="index.js") }}'></script>
 
@@ -76,7 +75,7 @@
                     <h6 class="contents1">여행을 기록하고 공유합니다 :)</h6>
                     <p class="home-content">
                         홈페이지가 마음에 든다면!
-                        <button onclick="countNumber()" type="button" class="user-like">❤&nbsp;&nbsp;<span id="counting">0</span></button>
+                        <button onclick="countNumber(alert('좋아요 눌러 주셔서 감사합니다!'))" type="button" class="user-like">❤&nbsp;&nbsp;<span id="counting">0</span></button>
                     </p>
                 </div>
 

@@ -68,6 +68,9 @@ def test_create():
     save_to = f'static/{filename}.{extension}'
     file.save(save_to)
 
+    if(review_receive == None) or (keywords_receive == None):
+        return
+
     doc = {
         'title': title_receive,
         'season': season_receive,
@@ -75,7 +78,8 @@ def test_create():
         'keywords': keywords_receive,
         'review': review_receive,
         'file' : f'{filename}.{extension}',
-        'data': mytime
+        'data': mytime,
+        'ike': 0
     }
     db.travelreview.insert_one(doc)
 
@@ -86,6 +90,7 @@ def test_create():
 def show_reviews():
     reviews = list(db.travelreview.find({}, {'_id': False}).sort('data', -1))
     return jsonify({'all_reviews': reviews})
+
 
 if __name__ == '__main__':
     app.run('0.0.0.0', port=5000, debug=True)

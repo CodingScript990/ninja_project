@@ -43,6 +43,7 @@ function showReview() {
                                             </ul>
                                         </div>
                                     </div>
+                                    
                                  </div>`;
                 $('#reviews-box').append(temp_html);
             }
